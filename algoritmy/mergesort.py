@@ -22,5 +22,5 @@ def mergesort(m):
     right = mergesort(right.copy())
     return merge(left.copy(),right.copy())
 
-print(mergesort([1,3,2]))
-
+if __name__ == "__main__":
+    print(mergesort([1,3,2]))

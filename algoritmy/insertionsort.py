@@ -19,7 +19,9 @@ def insertionsort(pole):
                 j = i + 1
                 break
         result.insert(j, prvek) # vložíme prvek do pole result na index j
-        print("vlozen prvek " + str(prvek) + " na index " + str(j))
+        if __name__ == "__main__":
+            print("vlozen prvek " + str(prvek) + " na index " + str(j))
     return result
 
-print(insertionsort([12,14,11,4,7,2,3,15,8,9,1,10,6,5,13]))
+if __name__ == "__main__":
+    print(insertionsort([12,14,11,4,7,2,3,15,8,9,1,10,6,5,13]))
