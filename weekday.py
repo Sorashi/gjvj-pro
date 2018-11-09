@@ -1,13 +1,13 @@
 from datetime import date
 
 nazvy_dni = [
-  "pondělí",
-  "úterý",
-  "středa",
-  "čtvrtek",
-  "pátek",
+  "pondeli",
+  "utery",
+  "streda",
+  "ctvrtek",
+  "patek",
   "sobota",
-  "neděle"
+  "nedele"
 ]
 
 DAYS_IN_MONTH = [-1, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
@@ -40,4 +40,7 @@ if __name__ == "__main__":
   assert not is_leap_year(1900)
   assert is_leap_year(2004)
   # print(DAYS_IN_MONTH, DAYS_BEFORE_MONTH)
-  print(nazvy_dni[day_of_week(2018, 11, 8) - 1])
+  year = int(input("rok: "))
+  month = int(input("mesic: "))
+  day = int(input("den: "))
+  print(nazvy_dni[day_of_week(year, month, day) - 1])
