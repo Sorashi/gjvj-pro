@@ -1,5 +1,7 @@
 from datetime import date
 
+# reference: https://github.com/python/cpython/blob/master/Lib/datetime.py
+
 nazvy_dni = [
   "pondeli",
   "utery",
